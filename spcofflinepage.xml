@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>SPC offline page</name>
+    <author>Silver PC group</author>
+    <version>1.0.2</version>
+    <creationDate>28-03-2014</creationDate>
+    <copyright>(C) 2015 Silver PC Group. All rights reserved.</copyright>
+    <authorEmail>info@silverpcgroup.com</authorEmail>
+    <authorUrl>www.silverpcgroup.com</authorUrl>
+    <license> http://www.gnu.org/licenses GNU/GPL</license>
+    <description>
+      <![CDATA[
+      <div style="line-height:24px; font-weight:normal; font-size:13px; color:#5b5b5b">SPC Offline is based on LG_Offline-Page plugin allows you to easily create and customize your Joomla! offline page.</div>
+      <div style="line-height:24px; font-weight:normal; font-size:13px;color:#5b5b5b">This page can be used for an under-construction website or an under-maintenance website. You will also be able to choose displaying the login form or not.</div>
+      <div style="line-height:24px; font-weight:normal; font-size:13px;color:#5b5b5b">This plugin works with Joomla 2.5 and Joomla 3.0.</div>
+      <div style="line-height:24px; font-weight:normal; font-size:13px;color:#5b5b5b">With this plugin, the offline page is responsive and customizable, you'll be able to show or not the information below :</div>
+      <ul style="color:#5b5b5b;">
+      	<li>Logo</li>
+      	<li>QR Code</li>
+      	<li>Titles</li>
+      	<li>ADDRESS</li>
+      	<li>Contact information (phone, fax, etc.)</li>
+      	<li>Social networks</li>
+      	<li>Countdown</li>
+      	<li>Méta tags data</li>
+      	<li>Favicon</li>
+      	<li>Backgroud color or image</li>
+      	<li>Connection form</li>
+        <li>Logon rights to user groups</li>
+      </ul>
+      <div style="font-weight:bold;">
+      	To activate the offline page, just activate this plugin.<br> 
+<u>It is therefore not necessary</u> to activate the page offline via default joomla global configuration -> Site</div>
+      ]]>
+    </description>
+	<files>
+		<filename plugin="spcofflinepage">spcofflinepage.php</filename>
+		<filename>index.html</filename>
+        <folder>spcofflinepage</folder>
+	</files>
+
+    <languages folder="language">
+		<language tag="en-GB">en-GB.plg_system_spcofflinepage.ini</language>
+		<language tag="en-GB">en-GB.plg_system_spcofflinepage.sys.ini</language>
+        <!--
+		<language tag="fr-FR">fr-FR.plg_system_spcofflinepage.ini</language>
+		<language tag="fr-FR">fr-FR.plg_system_spcofflinepage.sys.ini</language>
+        <language tag="it-IT">it-IT.plg_system_spcofflinepage.ini</language>
+		<language tag="it-IT">it-IT.plg_system_spcofflinepage.sys.ini</language>-->
+	</languages>
+	
+	<config>
+	 <fields name="params">
+
+		<fieldset name="SPC_OP_FIELD_HEADER_LBL">
+			<field name="code_qr" type="media" directory="images" default="" label="SPC_OP_CODE_QR" description="SPC_OP_CODE_QR_DESC" />
+			<field name="logo" type="media" directory="images" default="./plugins/system/spcofflinepage/spcofflinepage/images/underconstruction.svg" label="SPC_OP_LOGO" description="SPC_OP_LOGO_DESC" />
+            <field name="dimension-logo" type="text" default="" label="SPC_OP_DIMENSION_LOGO" description="SPC_OP_DIMENSION_LOGO_DESC" size="40" />
+            <field name="type-dimension" type="list" label="SPC_OP_TYPE_DIMENSION" description="SPC_OP_TYPE_DIMENSION_DESC" default="1">
+				<option value="height">SPC_OP_TYPE_DIMENSION_HEIGHT</option>
+				<option value="width">SPC_OP_TYPE_DIMENSION_WIDTH</option>
+			</field>
+			<field name="message" type="text" default="Our website isn’t quite ready, but you can still..." label="SPC_OP_MESSAGE" description="SPC_OP_MESSAGE_DESC" size="70" />
+			<field name="color_message" type="color" default="#4d3b3b" label="SPC_OP_COLOR_MESSAGE" description="SPC_OP_COLOR_MESSAGE_DESC" />
+		</fieldset>
+
+		<fieldset name="SPC_OP_FIELD_BLOCK_L">
+			<field name="show_address" type="list" label="SPC_OP_SHOW_BLOCK" description="SPC_OP_SHOW_BLOCK_DESC" default="1">
+					<option value="0">SPC_OP_SHOW_NO</option>
+					<option value="1">SPC_OP_SHOW_YES</option>
+			</field>
+			<field name="title_address" type="text" default="Visit us" label="SPC_OP_TITLE_BLOCK" description="SPC_OP_TITLE_BLOCK_DESC" size="40"/>
+            <field name="address" type="textarea" default="Address, City, State, Zip" label="SPC_OP_ADDRESS" description="SPC_OP_ADDRESS_DESC" rows="10" cols="40" />
+            <field name="show_block_l_html" type="list" label="SPC_OP_SHOW_HTML" description="SPC_OP_SHOW_HTML_DESC" default="0">
+				<option value="0">SPC_OP_SHOW_NO</option>
+				<option value="1">SPC_OP_SHOW_YES</option>
+			</field>
+            <field name="spacer_editor" type="spacer" default="" label="SPC_OP_TEXT_EDITOR" description="SPC_OP_TEXT_EDITOR_DESC" />
+            <field name="block_l_html" type="editor" filter="safehtml" default="" label="SPC_OP_CONTENT_BLOCK" description="SPC_OP_CONTENT_BLOCK_DESC"  width="150"  />
+		 </fieldset>	
+
+		<fieldset name="SPC_OP_FIELD_BLOCK_M">
+			<field name="show_contact" type="list" label="SPC_OP_SHOW_BLOCK" description="SPC_OP_SHOW_BLOCK_DESC" default="0">
+					<option value="0">SPC_OP_SHOW_NO</option>
+					<option value="1">SPC_OP_SHOW_YES</option>
+			</field>
+			<field name="title_coordinate" type="text" default="Contact us" label="SPC_OP_TITLE_BLOCK" description="SPC_OP_TITLE_BLOCK_DESC" size="40" />
+			<field name="lbl_tel" type="text" default="Phone" label="SPC_OP_LBL_PHONE" description="SPC_OP_LBL_PHONE_DESC" size="40" />
+			<field name="tel" type="text" default="000 000 000" label="SPC_OP_PHONE" description="SPC_OP_PHONE_DESC" size="40" />
+			<field name="lbl_fax" type="text" default="Fax" label="SPC_OP_LBL_FAX" description="SPC_OP_LBL_FAX_DESC" size="40" />
+			<field name="fax" type="text" default="000 000 000" label="SPC_OP_FAX" description="SPC_OP_FAX_DESC" size="40" />
+			<field name="lbl_email" type="text" default="Email" label="SPC_OP_LBL_EMAIL" description="SPC_OP_LBL_EMAIL_DESC" size="40" />
+			<field name="email" type="text" default="email@example.com" label="SPC_OP_EMAIL" description="SPC_OP_EMAIL_DESC" size="40" />
+            <field name="show_block_m_html" type="list" label="SPC_OP_SHOW_HTML" description="SPC_OP_SHOW_HTML_DESC" default="0">
+					<option value="0">SPC_OP_SHOW_NO</option>
+					<option value="1">SPC_OP_SHOW_YES</option>
+			</field>
+            <field name="spacer_editor" type="spacer" default="" label="SPC_OP_TEXT_EDITOR" description="SPC_OP_TEXT_EDITOR_DESC" />
+            <field name="block_m_html" type="editor" filter="safehtml" default="" label="SPC_OP_CONTENT_BLOCK" description="SPC_OP_CONTENT_BLOCK_DESC"   width="100" />
+		</fieldset>
+
+		<fieldset name="SPC_OP_FIELD_BLOCK_R">
+			<field name="show_social" type="list" label="SPC_OP_SHOW_BLOCK" description="SPC_OP_SHOW_BLOCK_DESC" default="0">
+					<option value="0">SPC_OP_SHOW_NO</option>
+					<option value="1">SPC_OP_SHOW_YES</option>
+			</field>
+			<field name="title_social" type="text" default="Follow us" label="SPC_OP_TITLE_BLOCK" description="SPC_OP_TITLE_BLOCK_DESC" size="40"/>
+			<field name="facebook" type="text" default="" label="SPC_OP_FACEBOOK" description="SPC_OP_FACEBOOK_DESC" />
+			<field name="twitter" type="text" default="" label="SPC_OP_TWITTER" description="SPC_OP_TWITTER_DESC" />
+			<field name="gplus" type="text" default="" label="SPC_OP_GPLUS" description="SPC_OP_GPLUS_DESC" />
+			<field name="youtube" type="text" default="" label="SPC_OP_YOUTUBE" description="SPC_OP_YOUTUBE_DESC" />
+			<field name="pinterest" type="text" default="" label="SPC_OP_PINTEREST" description="SPC_OP_PINTEREST_DESC" />
+            <field name="show_block_r_html" type="list" label="SPC_OP_SHOW_HTML" description="SPC_OP_SHOW_HTML_DESC" default="0">
+					<option value="0">SPC_OP_SHOW_NO</option>
+					<option value="1">SPC_OP_SHOW_YES</option>
+			</field>
+            <field name="spacer_editor" type="spacer" default="" label="SPC_OP_TEXT_EDITOR" description="SPC_OP_TEXT_EDITOR_DESC" />
+            <field name="block_r_html" type="editor" filter="safehtml" default="" label="SPC_OP_CONTENT_BLOCK" description="SPC_OP_CONTENT_BLOCK_DESC"   width="100"  />
+		</fieldset>
+		
+		<fieldset name="SPC_OP_FIELD_DESCRIPTION_LBL">
+			<field name="show_description" type="list" label="SPC_OP_SHOW_BLOCK" description="SPC_OP_SHOW_BLOCK_DESC" default="0">
+					<option value="0">SPC_OP_SHOW_NO</option>
+					<option value="1">SPC_OP_SHOW_YES</option>
+			</field>
+			<field name="title_about" type="text" default="Who we are" label="SPC_OP_TITLE_ABOUT" description="SPC_OP_TITLE_ABOUT_DESC" />
+                        <field name="spacer_editor" type="spacer" default="" label="SPC_OP_TEXT_EDITOR" description="SPC_OP_TEXT_EDITOR_DESC" />
+			<field name="about" type="editor" filter="safehtml" default="" label="SPC_OP_ABOUT" description="SPC_OP_ABOUT_DESC"   width="100" />
+		</fieldset>
+
+		<fieldset name="SPC_OP_FIELD_ENDTEXT_LBL">
+			<field name="show_endtext" type="list" label="SPC_OP_SHOW_BLOCK" description="SPC_OP_SHOW_BLOCK_DESC" default="1">
+					<option value="0">SPC_OP_SHOW_NO</option>
+					<option value="1">SPC_OP_SHOW_YES</option>
+			</field>
+			<field name="show_animate" type="list" label="SPC_OP_SHOW_ANIMATION" description="SPC_OP_SHOW_FLASH_DESC" default="1">
+					<option value="0">SPC_OP_SHOW_NOANIMATE</option>
+					<option value="1">SPC_OP_SHOW_FLASH</option>
+					<option value="2">SPC_OP_SHOW_BOUNCEIN</option>
+					<option value="3">SPC_OP_SHOW_BOUNCE</option>
+					<option value="4">SPC_OP_SHOW_PULSE</option>
+					<option value="5">SPC_OP_SHOW_RUBBERBAND</option>					
+			</field>
+			<field name="texte_fin" type="text" default="See you very soon !" label="SPC_OP_TEXT_END" description="SPC_OP_TEXT_END_DESC" />
+		</fieldset>
+
+
+		<fieldset name="SPC_OP_FIELD_META_LBL">
+			<field name="titre" type="text" default="Coming soon" label="SPC_OP_TITLE" description="SPC_OP_TITLE_DESC" />
+			<field name="description" type="textarea" default="" label="SPC_OP_DESCRIPTION" description="SPC_OP_DESCRIPTION_DESC" rows="10" cols="40" />
+			<field name="keywords" type="textarea" default="" label="SPC_OP_KEYWORDS" description="SPC_OP_KEYWORDS_DESC" rows="10" cols="40" />
+		</fieldset>
+
+		<fieldset name="SPC_OP_FIELD_COUNTDOWN">
+			<field name="show_countdown" type="list" label="SPC_OP_SHOW_BLOCK" description="SPC_OP_SHOW_BLOCK_DESC" default="1">
+					<option value="0">SPC_OP_SHOW_NO</option>
+					<option value="1">SPC_OP_SHOW_YES</option>
+			</field>
+			<field name="title_countdown" type="text" default="Countdown" label="SPC_OP_TITLE_COUNTDOWN" description="SPC_OP_TITLE_COUNTDOWN_DESC" size="40"/>
+			<field name="desc_countdown" type="text" default="Our website will be ready in" label="SPC_OP_DESC_COUNTDOWN" description="SPC_OP_DESC_COUNTDOWN_DESC" size="40"/>
+			<field name="date_lancement" type="text" default="2018-01-27 23:59:00" label="SPC_OP_DATE" description="SPC_OP_DATE_DESC" size="40"/>
+		</fieldset>
+
+		<fieldset name="Basic">
+			<field name="favicon" type="media" directory="images" default="" label="SPC_OP_FAVICON" description="SPC_OP_FAVICON_DESC" />
+			<field name="style-bg" type="list" label="SPC_OP_STYLE_BG" description="SPC_OP_STYLE_BG_DESC" default="0">
+					<option value="0">SPC_OP_STYLE_BG_DEFAULT</option>
+					<option value="1">SPC_OP_STYLE_BG_IMG</option>
+					<option value="2">SPC_OP_STYLE_BG_PARTS</option>
+			</field>
+			<field name="background-img" type="media" directory="images" default="" label="SPC_OP_BG_IMG" description="SPC_OP_BG_IMG_DESC" />
+               <field name="repeat-bg" type="list" label="SPC_OP_REPEAT_BG" description="SPC_OP_REPEAT_BG_DESC" default="1">
+					<option value="repeat">SPC_OP_REPEAT_BG_R</option>
+					<option value="repeat-x">SPC_OP_REPEAT_BG_RX</option>
+                    <option value="repeat-y">SPC_OP_REPEAT_BG_RY</option>
+					<option value="no-repeat">SPC_OP_REPEAT_BG_NR</option>
+			</field>
+            <field name="align-x" type="list" label="SPC_OP_BG_ALIGN_X" description="SPC_OP_BG_ALIGN_X_DESC" default="1">
+					<option value="left">SPC_OP_BG_ALIGN_X_LEFT</option>
+					<option value="right">SPC_OP_BG_ALIGN_X_RIGHT</option>
+                    <option value="center">SPC_OP_BG_ALIGN_X_CENTER</option>
+			</field> 
+            <field name="align-y" type="list" label="SPC_OP_BG_ALIGN_Y" description="SPC_OP_BG_ALIGN_Y_DESC" default="1">
+					<option value="top">SPC_OP_BG_ALIGN_Y_TOP</option>
+					<option value="bottom">SPC_OP_BG_ALIGN_Y_BOTTOM</option>
+                    <option value="center">SPC_OP_BG_ALIGN_Y_CENTER</option>
+			</field>            
+            <field name="cover-bg" type="list" label="SPC_OP_COVER_BG" description="SPC_OP_COVER_BG_DESC" default="1">
+					<option value="0">SPC_OP_SHOW_NO</option>
+					<option value="1">SPC_OP_SHOW_YES</option>
+			</field>                
+			<field name="background" type="color" default="#e6e6e6" label="SPC_OP_COLOR_BG" description="SPC_OP_COLOR_BG_DESC" />
+					<field name="title_cnx" type="text" default="Members area" label="SPC_OP_TITLE_CNX" description="SPC_OP_TITLE_CNX_DESC" size="40"/>
+                    <field name="groupe_user" type="text" default="8,7" label="SPC_OP_GROUP_USER" description="SPC_OP_GROUP_USER_DESC" size="40"/>
+					<field name="connexion" type="list" label="SPC_OP_SHOW_FORM" description="SPC_OP_SHOW_FORM_DESC" default="1">
+						<option value="0">SPC_OP_SHOW_NO</option>
+						<option value="1">SPC_OP_SHOW_YES</option>
+					</field>			
+          </fieldset>            
+           <fieldset name="SPC_OP_FIELD_IMG_COVER">
+				<field name="spacer_text" type="spacer" default="" label="SPC_OP_TEXT_IMG_COVER" description="SPC_OP_TEXT_IMG_COVER_DESC" />
+                <field name="cover-img" type="media" directory="images" default="" label="SPC_OP_IMG_COVER_T" description="SPC_OP_IMG_COVER_T_DESC" />
+                <field name="width-c-img" type="text" default="100" label="SPC_OP_WIDTH_IMG_COVER" description="SPC_OP_WIDTH_IMG_COVER_DESC" />
+            </fieldset>    
+
+   </fields>
+	
+	</config>
+</extension>

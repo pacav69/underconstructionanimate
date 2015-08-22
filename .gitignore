@@ -1,0 +1,7 @@
+
+*.komodotool
+
+*.komodoproject
+
+/build
+build*

@@ -1,0 +1,38 @@
+Changelog
+v1.0.3
+Added in images for animated graphic
+
+
+=======================================================================
+
+v1.0.2
+renamed files to have spc in name
+
+=======================================================================
+v1.0.1
+=======================================================================
+minor changes code
+=======================================================================
+SPC v1.0.0
+Based on LG v2.2.2
+Seperated End Text to be a single block
+Added animate.css style sheet credit to Dan Eden
+Animate.css - http://daneden.me/animate
+Added prefixfree.min.js by Lea Verou to allow support for all browsers for vendor specific CSS3
+http://leaverou.github.io/prefixfree/
+
+Animated End text with the following:
+Flash
+Bouncein
+Bounce
+Pulse
+Rubberband
+
+Created options for selection of animation for end text
+
+Corrected english spelling for various texts
+
+Added in Scalable Vector Graphic (SVG) as default under construction graphic
+
+=============================================================================
+
