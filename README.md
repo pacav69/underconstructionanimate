@@ -1,2 +1,2 @@
 # joomlaspcoffline
-joomla offline page
+Joomla plugin for under construction or offline option with animation
