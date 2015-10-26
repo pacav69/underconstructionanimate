@@ -11,7 +11,7 @@
     <description>
       <![CDATA[
       <div style="line-height:24px; font-weight:normal; font-size:13px; color:#5b5b5b">SPC Offline is based on LG_Offline-Page plugin allows you to easily create and customize your Joomla! offline page.</div>
-      <div style="line-height:24px; font-weight:normal; font-size:13px;color:#5b5b5b">This page can be used for an under-construction website or an under-maintenance website. You will also be able to choose displaying the login form or not.</div>
+      <div style="line-height:24px; font-weight:normal; font-size:13px;color:#5b5b5b">This page can be used for an under-construction website or an under-maintenance website. Option to display a login form.</div>
       <div style="line-height:24px; font-weight:normal; font-size:13px;color:#5b5b5b">This plugin works with Joomla 2.5 and Joomla 3.0.</div>
       <div style="line-height:24px; font-weight:normal; font-size:13px;color:#5b5b5b">With this plugin, the offline page is responsive and customizable, you'll be able to show or not the information below :</div>
       <ul style="color:#5b5b5b;">
