@@ -8,7 +8,7 @@
  * @license http://www.gnu.org/licenses GNU/GPL
  */
 
- /* Copyright (c) 2003 Default Corporation. */\n
+ /* Copyright (c) 2003 Default Corporation. */
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
