@@ -4,9 +4,9 @@
     <author>Silver PC group</author>
     <version>1.0.2</version>
     <creationDate>28-03-2014</creationDate>
-    <copyright>(C) 2015 Silver PC Group. All rights reserved.</copyright>
-    <authorEmail>info@silverpcgroup.com</authorEmail>
-    <authorUrl>www.silverpcgroup.com</authorUrl>
+    <copyright>(C) 2015 Silver PC Group and Cavtronics. All rights reserved.</copyright>
+    <authorEmail>info@Cavtronics.com</authorEmail>
+    <authorUrl>www.Cavtronics.com</authorUrl>
     <license> http://www.gnu.org/licenses GNU/GPL</license>
     <description>
       <![CDATA[
@@ -29,8 +29,16 @@
         <li>Logon rights to user groups</li>
       </ul>
       <div style="font-weight:bold;">
-      	To activate the offline page, just activate this plugin.<br> 
-<u>It is therefore not necessary</u> to activate the page offline via default joomla global configuration -> Site</div>
+      	      </ul> <p>
+<h3>Activate</h3>
+To activate the offline page, just activate this plugin by going to Extensions-->plug-ins, then do a search for offline, select the active option then save.<p> 
+
+<h3>Deactivate</h3>   	
+To deactivate go to Extensions-->plug-ins, then do a search for offline, select the deactivate option then save. <p> 
+
+<b>Note: It is not necessary</u> to activate the page offline via default joomla global configuration -> Site</b>
+
+</div>
       ]]>
     </description>
 	<files>

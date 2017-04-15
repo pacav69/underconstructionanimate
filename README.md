@@ -20,8 +20,12 @@ This page can be used for an under-construction website or an under-maintenance 
       	<li>Backgroud color or image</li>
       	<li>Connection form</li>
         <li>Logon rights to user groups</li>
-      </ul>
-      <div style="font-weight:bold;">
-      	To activate the offline page, just activate this plugin.<br> 
-<u>It is therefore not necessary</u> to activate the page offline via default joomla global configuration -> Site</div>
+      </ul> <p>
+### Activate
+To activate the offline page, just activate this plugin by going to Extensions-->plug-ins, then do a search for offline, select the active option then save.<p>
+
+### Deactivate   	
+To deactivate go to Extensions-->plug-ins, then do a search for offline, select the deactivate option then save. <p> 
+
+<b>Note: It is not necessary</u> to activate the page offline via default joomla global configuration -> Site</b>
       
