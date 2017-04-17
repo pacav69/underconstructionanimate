@@ -21,6 +21,9 @@ This page can be used for an under-construction website or an under-maintenance 
       	<li>Connection form</li>
         <li>Logon rights to user groups</li>
       </ul> <p>
+      
+### Installing
+[Download the latest file](https://github.com/pacav69/underconstructionanimate/releases/latest)
 ### Activate
 To activate the offline page, just activate this plugin by going to Extensions-->plug-ins, then do a search for offline, select the active option then save.<p>
 
