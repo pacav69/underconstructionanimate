@@ -1,5 +1,8 @@
 Changelog
 =======================================================================
+v1.0.6
+updated spcoffline.xml file with new cavtronics logo and website
+=======================================================================
 v1.0.5
 updated readme.md file with new cavtronics logo and website
 =======================================================================

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="plugin" group="system" method="upgrade">
     <name>SPC offline page</name>
-    <author>Silver PC group</author>
-    <version>1.0.2</version>
+    <author>Silver PC group and Cavtronics</author>
+    <version>1.0.6</version>
     <creationDate>28-03-2014</creationDate>
     <copyright>(C) 2015 Silver PC Group and Cavtronics. All rights reserved.</copyright>
     <authorEmail>info@Cavtronics.com</authorEmail>
@@ -10,14 +10,11 @@
     <license> http://www.gnu.org/licenses GNU/GPL</license>
     <description>
       <![CDATA[
-
-		<div class="container-logo">
-			<a href="http://www.cavtronics.com">
-			<img src="	https://cldup.com/BhJv2ZU0rj.jpg" class="logo" alt="cavtronics logo">
-			</a>
-		</div>
-		
-
+      <div class="container-logo">
+	<a href="http://www.cavtronics.com">
+	<img src="https://cldup.com/BhJv2ZU0rj.jpg" class="logo" alt="cavtronicslogo">
+	</a>
+	</div>
       <div style="line-height:24px; font-weight:normal; font-size:13px; color:#5b5b5b">SPC Offline is based on LG_Offline-Page plugin allows you to easily create and customize your Joomla! offline page.</div>
       <div style="line-height:24px; font-weight:normal; font-size:13px;color:#5b5b5b">This page can be used for an under-construction website or an under-maintenance website. Option to display a login form.</div>
       <div style="line-height:24px; font-weight:normal; font-size:13px;color:#5b5b5b">This plugin works with Joomla 2.5 and Joomla 3.0.</div>
