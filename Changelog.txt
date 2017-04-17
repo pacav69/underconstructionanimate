@@ -1,7 +1,10 @@
 Changelog
 =======================================================================
+v1.0.5
+updated readme.md file with new cavtronics logo and website
+=======================================================================
 v1.0.4
-correcyed error in offline.php
+corrected error in offline.php
 =======================================================================
 v1.0.3
 Added in images for animated graphic

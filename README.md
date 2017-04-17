@@ -1,4 +1,4 @@
-[![spc logo](https://cldup.com/BhJv2ZU0rj.jpg)](http://www.cavtronics.com "silverpcgroup")
+[![cavtronics logo](https://cldup.com/BhJv2ZU0rj.jpg)](http://www.cavtronics.com "cavtronics")
 
 # Joomla SPC Offline
 Joomla plugin for under construction or offline option with animation.

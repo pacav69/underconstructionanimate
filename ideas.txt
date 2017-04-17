@@ -1,0 +1,5 @@
+ideas.txt
+have visitor to website wubmit email for notification of when website is
+online
+email equiry for getting offline plugin
+add logo to main page
