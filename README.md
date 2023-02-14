@@ -31,4 +31,12 @@ To activate the offline page, just activate this plugin by going to Extensions--
 To deactivate go to Extensions-->plug-ins, then do a search for offline, select the deactivate option then save. <p> 
 
 <b>Note: It is not necessary</u> to activate the page offline via default joomla global configuration -> Site</b>
-      
+
+
+
+## Support
+
+<img src="https://vangogh.teespring.com/v3/image/SugZ-DRGZXUTuSzfrFtaOU3TAUQ/800/800.jpg" width="100px"  height="100px">
+
+[Help support by buying some merchandise](https://cavtronics-3.creator-spring.com/)
+
